@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="img/preloader.svg" alt="">
+    </div>
+    <header id="main-header">
+        <div class="container">
+            <div class="primary-header">
+                <div class="primary-header-left d-none d-sm-flex">
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:0507773412">
+                                <ion-icon name="call"></ion-icon>
+                                <span>(050) 777 34 12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:salam@filagency.az">
+                                <ion-icon name="mail"></ion-icon>
+                                <span>salam@filagency.az</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="primary-header-right">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="lang-list">
+                        <li>
+                            <button>Az <ion-icon name="chevron-down"></ion-icon></button>
+                        </li>
+                        <ul class="lang-dropdown">
+                            <li>
+                                <a href="#">En</a>
+                            </li>
+                            <li>
+                                <a href="#">Ru</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="secondary-header d-none d-lg-block">
+                <nav class="main-menu">
+                    <div class="row gx-0">
+                        <div class="col">
+                            <div class="menu-left">
+                                <ul class="main-menu-list">
+                                    <li><a href="about.html">Haqqımızda</a></li>
+                                    <li><a href="services.html">Xidmətlər</a></li>
+                                    <li><a href="portfolio.html">İşlərimiz</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="menu-center">
+                                <a class="header-logo" href="index.html">
+                                    <img src="img/fil-logo.svg" alt="Fill Agency">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="menu-right">
+                                <ul class="main-menu-list">
+                                    <li><a href="projects.html">Layihələrimiz</a></li>
+                                    <li><a href="news.html">Xəbərlər</a></li>
+                                    <li><a href="contact.html">Əlaqə</a></li>
+                                    <li>
+                                        <form action="" id="searchForm">
+                                            <div class="input-group">
+                                                <input class="form-control" type="text" id="searchInput" placeholder="Axtarış">
+                                                <button class="btn-general secondary" type="submit" id="search-btn">Axtar</button>
+                                            </div>
+                                            <button type="button" id="search-toggle-btn">
+                                                <ion-icon class="search" name="search-outline"></ion-icon>
+                                                <ion-icon class="close" name="close-outline"></ion-icon>
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-secondary-header d-lg-none">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mobile-header-left">
+                            <div class="menu-toggle d-lg-none">
+                                <div class="bar">
+                                    <div class="one"></div>
+                                    <div class="two"></div>
+                                    <div class="three"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mobile-header-center">
+                            <a class="mobile-header-logo" href="index.html">
+                                <img src="img/fil-logo.svg" alt="Fill Agency">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mobile-header-right">
+                            <form action="" id="searchForm">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" id="searchInput" placeholder="Axtarış">
+                                    <button class="btn-general secondary" type="submit" id="search-btn">Axtar</button>
+                                </div>
+                                <button type="button" id="search-toggle-btn">
+                                    <ion-icon class="search" name="search-outline"></ion-icon>
+                                    <ion-icon class="close" name="close-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu d-lg-none">
+                <div class="menu-wrapper">
+                    <div class="menu-header">
+                        <!-- <div class="mobile-menu-logo">
+                                <a href="index.html">
+                                    <img src="img/fil-logo.svg" alt="">
+                                </a>
+                            </div> -->
+                        <div class="menu-toggle inner active d-block d-lg-none">
+                            <div class="bar">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-body">
+                        <nav class="main-menu">
+                            <ul class="main-menu-list mobile">
+                                <li><a href="index.html">Ana səhifə</a></li>
+                                <li><a href="about.html">Haqqımızda</a></li>
+                                <li><a href="services.html">Xidmətlər</a></li>
+                                <li><a href="portfolio.html">İşlərimiz</a></li>
+                                <li><a href="projects.html">Layihələrimiz</a></li>
+                                <li><a href="news.html">Xəbərlər</a></li>
+                                <li><a href="contact.html">Əlaqə</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-footer">
+                        <ul class="social-list mobile">
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="portfolio-inner-pg">
+        <section id="page-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="page-heading">Portfolio-1</h1>
+                    <p class="page-sub-heading">Fil Agency</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio-inner" class="content-box-lg pb-0">
+            <div class="portfolio-inner-wrapper">
+                <div class="container">
+                    <div class="portfolio-info">
+                        <div class="row gy-0 gx-0">
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-img">
+                                    <img src="img/portfolio/portfolio-inner/portfolio-inner-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-text">
+                                    <h3>Portfolio-1</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-0 gx-0">
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-img">
+                                    <img src="img/portfolio/portfolio-inner/portfolio-inner-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-text">
+                                    <h3>Portfolio-2</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gy-0 gx-0">
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-img">
+                                    <img src="img/portfolio/portfolio-inner/portfolio-inner-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="portfolio-inner-text">
+                                    <h3>Portfolio-3</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-gallery gallery">
+                        <div class="image-gallery">
+                            <div class="swiper-container gallerySwiper image">
+                                <div class="swiper-wrapper">
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-1.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-1.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-2.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-2.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-3.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-3.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-1.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-1.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-2.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-2.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                    <a href="img/portfolio/portfolio-gallery/gallery-item-3.png" class="swiper-slide" data-fancybox="image-gallery" >
+                                        <img data-src="img/portfolio/portfolio-gallery/gallery-item-3.png" class="swiper-lazy" />
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="video-gallery">
+                            <div class="swiper-container gallerySwiper video">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="https://youtu.be/n3TMQpdCevQ" data-fancybox="video-gallery" >
+                                            <img data-src="img/portfolio/portfolio-inner/portfolio-inner-1.png" class="swiper-lazy" />
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="overlay">
+                                                <div class="play-btn"><span></span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://youtu.be/n3TMQpdCevQ" data-fancybox="video-gallery" >
+                                            <img data-src="img/portfolio/portfolio-inner/portfolio-inner-2.png" class="swiper-lazy" />
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="overlay">
+                                                <div class="play-btn"><span></span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://youtu.be/n3TMQpdCevQ" data-fancybox="video-gallery" >
+                                            <img data-src="img/portfolio/portfolio-inner/portfolio-inner-3.png" class="swiper-lazy" />
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="overlay">
+                                                <div class="play-btn"><span></span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://youtu.be/n3TMQpdCevQ" data-fancybox="video-gallery" >
+                                            <img data-src="img/portfolio/portfolio-inner/portfolio-inner-1.png" class="swiper-lazy" />
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="overlay">
+                                                <div class="play-btn"><span></span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="https://youtu.be/n3TMQpdCevQ" data-fancybox="video-gallery" >
+                                            <img data-src="img/portfolio/portfolio-inner/portfolio-inner-2.png" class="swiper-lazy" />
+                                            <div class="swiper-lazy-preloader"></div>
+                                            <div class="overlay">
+                                                <div class="play-btn"><span></span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-wave top">
+                <img src="img/pattern/wave-white.svg" alt="">
+            </div>
+        </section>
+        <section id="partners" class="content-box-sm">
+            <div class="container">
+                <div class="swiper-container partnerSwiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-1.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-2.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-3.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-1.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-2.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-3.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-1.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-2.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img data-src="img/partners/partner-3.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <div class="section-wave bottom">
+            <img src="img/pattern/wave-white.svg" alt="">
+        </div>
+        <div class="primary-footer">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-3">
+                        <div class="footer-top">
+                            <a class="footer-logo" href="index.html">
+                                <img src="img/fil-logo.svg" alt="Fill Agency">
+                            </a>
+                            <p class="slogan">Dost agentlik</p>
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-block">
+                            <h5>Xidmətlər</h5>
+                            <ul>
+                                <li><a href="service-inner.html">Rəqəmsal Marketinq</a></li>
+                                <li><a href="service-inner.html">Marketinq Strategiyası</a></li>
+                                <li><a href="service-inner.html">Brendinq</a></li>
+                                <li><a href="service-inner.html">PR</a></li>
+                                <li><a href="service-inner.html">Sosial Media Marketinqi</a></li>
+                                <li><a href="service-inner.html">Dizayn və Məzmun</a></li>
+                                <li><a href="service-inner.html">Video çarx</a></li>
+                                <li><a href="service-inner.html">Bazar araşdırması</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-block">
+                            <h5>Səhifələr</h5>
+                            <ul>
+                                <li><a href="about.html">Haqqımızda</a></li>
+                                <li><a href="services.html">Xidmətlərimiz</a></li>
+                                <li><a href="portfolio.html">İşlərimiz</a></li>
+                                <li><a href="projects.html">Layihələrimiz</a></li>
+                                <li><a href="news.html">Xəbərlər</a></li>
+                                <li><a href="contact.html">Əlaqə</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-block">
+                            <h5>Əlaqə</h5>
+                            <ul class="contact-list">
+                                <li>
+                                    <a href="tel:0507773412">
+                                        <ion-icon name="call"></ion-icon>
+                                        <span>(050) 777 34 12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:salam@filagency.az">
+                                        <ion-icon name="mail"></ion-icon>
+                                        <span>salam@filagency.az</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="maps.google.com">
+                                        <ion-icon name="map"></ion-icon>
+                                        <span>Aynalı Plaza, Əhməd Rəcəbli, Bakı, AZ10005, Azərbaycan</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <form action="" id="subscribeForm">
+                                <input type="email" class="form-control" id="userEmail" placeholder="E-poçt ünvanı">
+                                <button class="btn-general primary" type="submit">Göndər</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-footer">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; 2021 Bütün hüquqlar qorunur |<a href="index.html">Fil Agency</a> </p>
+                    <p><a href="https://proton.az">Proton.az</a>tərəfindən hazırlanıb.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+</body>
+</html>
